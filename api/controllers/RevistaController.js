@@ -1,7 +1,7 @@
 /**
- * SuscripcionController
+ * RevistaController
  *
- * @description :: Server-side logic for managing suscripcions
+ * @description :: Server-side logic for managing revistas
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 

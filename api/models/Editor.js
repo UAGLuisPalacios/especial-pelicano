@@ -1,5 +1,5 @@
 /**
-* Cuenta.js
+* Editor.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -11,9 +11,9 @@ module.exports = {
         nombre: 'STRING',
 
         // Add a reference to Revistas
-        suscripciones: {
+        proyecto: {
             collection: 'suscripcion',
-            via: 'miembros'
+            via: 'editores'
         }
   }
 };

@@ -8,7 +8,19 @@
 module.exports = {
 
   attributes: {
-
+        titulo: 'STRING',
+        // Add a reference to Cuenta
+        miembros: {
+            model: 'cuenta'
+        },
+        // Add a reference to Editores
+        editores: {
+            model: 'editor'
+        },
+        ediciones:{
+            collection: 'revista',
+            via: 'serie'
+        }
   }
 };
 

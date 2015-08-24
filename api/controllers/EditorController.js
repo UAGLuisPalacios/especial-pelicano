@@ -1,7 +1,7 @@
 /**
- * SuscripcionController
+ * EditorController
  *
- * @description :: Server-side logic for managing suscripcions
+ * @description :: Server-side logic for managing editors
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
