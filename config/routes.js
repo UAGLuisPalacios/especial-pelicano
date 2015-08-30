@@ -46,6 +46,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'get /cuenta/create?': 'CuentaController.create'
+  'get /cuenta/create?': 'CuentaController.create',
+
+  'get /cuenta/upgrade?': 'CuentaController.upgrade'
 
 };

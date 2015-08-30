@@ -8,14 +8,9 @@
 module.exports = {
 
   attributes: {
-        nombre: 'STRING',
+        titulo: 'STRING',
 
-        // Add a reference to Revistas
-        proyecto: {
-            collection: 'suscripcion',
-            via: 'editores'
-        },
-        perfil: {
+        datos: {
             model: 'cuenta'
         }
   }

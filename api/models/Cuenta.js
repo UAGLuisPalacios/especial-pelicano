@@ -9,7 +9,11 @@ module.exports = {
 
   attributes: {
         nombre: 'STRING',
-        email: 'STRING'
+        email: 'STRING',
+        es_pro : {
+		    type : "boolean",
+		    defaultsTo : false
+		}
   }
 };
 
