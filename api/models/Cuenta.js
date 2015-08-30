@@ -9,12 +9,7 @@ module.exports = {
 
   attributes: {
         nombre: 'STRING',
-
-        // Add a reference to Revistas
-        suscripciones: {
-            collection: 'suscripcion',
-            via: 'miembros'
-        }
+        email: 'STRING'
   }
 };
 

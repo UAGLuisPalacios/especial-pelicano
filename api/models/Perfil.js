@@ -8,7 +8,11 @@
 module.exports = {
 
   attributes: {
+        titulo: 'STRING',
 
+        datos: {
+            model: 'cuenta'
+        }
   }
 };
 

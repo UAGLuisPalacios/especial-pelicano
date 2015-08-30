@@ -11,14 +11,14 @@ module.exports = {
         title: "Cuenta"
     });
   },
-  editor: function (req, res) {
+  upgrade: function (req, res) {
     res.view(null, {
-        title: "Editor"
+        title: "Upgrade"
     });
   },
-  suscripcion: function (req, res) {
+  revista: function (req, res) {
     res.view(null, {
-        title: "Suscripcion"
+        title: "Revista"
     });
   }
 };
