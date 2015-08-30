@@ -34,7 +34,7 @@ $scope.saveItem = function () {
 
   }
           else{
-            $http.get('/editor/update/'+ editor.id +'?nombre=' + editor.nombre ).success(function(data) {
+            $http.get('/editor/update/'+ editor.id +'?nombre=' + editor.nombre + '&perfil=' + editor.IDCuenta ).success(function(data) {
               $scope.displayForm = '';
               removeModal();
             }).

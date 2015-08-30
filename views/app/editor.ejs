@@ -7,20 +7,16 @@ EDITOR
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" ng-click="addItem()">Add</button>
      <div class="row h3">
           <div class="col-md-3">Nombre</div>
-          <div class="col-md-3">IDCuenta</div>
+          <div class="col-md-3">CUENTA</div>
           <div class="col-md-3"></div>
      </div>
  
         <div class="row" ng-repeat="item in items">
           <div class="col-md-3" ng-bind="item.nombre"></div>
-          <div class="col-md-3" ng-bind="item.IDCuenta"></div>
+          <div class="col-md-3" ng-bind="item.perfil.nombre"></div>
           <div class="col-md-3">  
            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="editItem(item)">Edit</button>
            <button class="btn" ng-click="removeItem(item)">Remove</button></div>
-
-           <BR><BR>
-
-           CUENTA:<BR> <div class="col-md-3" ng-bind="item.perfil.nombre"></div>
         </div>
  
  
