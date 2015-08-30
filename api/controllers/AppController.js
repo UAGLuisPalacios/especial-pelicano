@@ -11,11 +11,6 @@ module.exports = {
         title: "Cuenta"
     });
   },
-  upgrade: function (req, res) {
-    res.view(null, {
-        title: "Upgrade"
-    });
-  },
   revista: function (req, res) {
     res.view(null, {
         title: "Revista"

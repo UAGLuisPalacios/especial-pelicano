@@ -8,24 +8,7 @@
 module.exports = {
 
   attributes: {
-  		titulo: 'STRING',
-  		mes: 'STRING',
-        // Add a reference to Cuenta
-        links:{
-            collection: 'link',
-            via: 'edicion'
-        },
-        actividades:{
-            collection: 'actividad',
-            via: 'edicion'
-        },
-        subproyectos:{
-            collection: 'subproyecto',
-            via: 'edicion'
-        },
-        serie: {
-            model: 'suscripcion'
-        }
+  		titulo: 'STRING'
   }
 };
 

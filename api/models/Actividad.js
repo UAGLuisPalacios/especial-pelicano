@@ -8,11 +8,7 @@
 module.exports = {
 
   attributes: {
-  	titulo: 'STRING',
-        // Add a reference to Revistas
-        edicion: {
-            model: 'revista'
-        }
+  	titulo: 'STRING'
   }
 };
 

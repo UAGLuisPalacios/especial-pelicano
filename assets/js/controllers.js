@@ -8,7 +8,10 @@ define(function (require) {
   Controllers.controller('EditorController', require('controllers/EditorController'));
 
   Controllers.controller('SuscripcionController', require('controllers/SuscripcionController'));
-   
+  
+  Controllers.controller('RevistaController', require('controllers/RevistaController'));
+
+
   return Controllers;
    
 });

@@ -16,10 +16,6 @@ module.exports = {
         // Add a reference to Editores
         editores: {
             model: 'editor'
-        },
-        ediciones:{
-            collection: 'revista',
-            via: 'serie'
         }
   }
 };
