@@ -14,7 +14,11 @@ module.exports = {
         proyecto: {
             collection: 'suscripcion',
             via: 'editores'
+        },
+        perfil: {
+            model: 'cuenta'
         }
   }
 };
 
+1
