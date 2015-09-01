@@ -6,6 +6,13 @@
  */
 
 module.exports = {
-	
+	create: function(req, res, next){
+		var params = req.params.all();
+		Revista.create(params, function(err,Revista){
+			if (err) return next(err);
+
+			return res.redirect('/audiencia/create?titulo=MiAudiencia&datos='+ Revista.id);
+		});
+	}
 };
 

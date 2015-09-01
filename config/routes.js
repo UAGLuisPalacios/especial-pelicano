@@ -48,6 +48,10 @@ module.exports.routes = {
 
   'get /cuenta/create?': 'CuentaController.create',
 
-  'get /cuenta/upgrade?': 'CuentaController.upgrade'
+  'get /cuenta/upgrade?': 'CuentaController.upgrade',
+
+  'get /revista/create?': 'RevistaController.create',
+
+  'get /audiencia/create?': 'AudienciaController.create'
 
 };

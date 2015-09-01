@@ -6,6 +6,13 @@
  */
 
 module.exports = {
-	
+	create: function(req, res, next){
+		var params = req.params.all();
+		Audiencia.create(params, function(err,Audiencia){
+			if (err) return next(err);
+
+			return res.redirect('/equipo/create?titulo=MiAudiencia&datos='+ params.datos);
+		});
+	}
 };
 
