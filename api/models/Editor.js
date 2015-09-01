@@ -12,6 +12,10 @@ module.exports = {
 
         datos: {
             model: 'cuenta'
+        },
+        colaboraciones: {
+            collection: 'equipo',
+            via: 'editores'
         }
   }
 };

@@ -11,7 +11,7 @@ module.exports = {
 		Audiencia.create(params, function(err,Audiencia){
 			if (err) return next(err);
 
-			return res.redirect('/equipo/create?titulo=MiAudiencia&datos='+ params.datos);
+			return res.redirect('/equipo/create?titulo=MiEquipo&datos='+ params.datos);
 		});
 	}
 };

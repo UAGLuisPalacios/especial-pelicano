@@ -9,9 +9,12 @@ module.exports = {
 
   attributes: {
         titulo: 'STRING',
-
         datos: {
             model: 'cuenta'
+        },
+        suscripciones: {
+            collection: 'audiencia',
+            via: 'miembros'
         }
   }
 };

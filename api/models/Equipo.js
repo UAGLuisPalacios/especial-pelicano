@@ -9,9 +9,12 @@ module.exports = {
 
   attributes: {
   	titulo: 'STRING',
-
-        datos: {
+        magazine: {
             model: 'revista'
+        },
+        editores: {
+            collection: 'editor',
+            via: 'colaboraciones'
         }
   }
 };
