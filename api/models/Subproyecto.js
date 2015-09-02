@@ -9,8 +9,9 @@ module.exports = {
 
   attributes: {
   	titulo: 'STRING',
-  	objetivo: 'STRING',
-  	tablero: 'STRING'
+  	publicacion: {
+            model: 'edicion'
+        }
   }
 };
 

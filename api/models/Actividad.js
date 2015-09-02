@@ -8,7 +8,10 @@
 module.exports = {
 
   attributes: {
-  	titulo: 'STRING'
+  	titulo: 'STRING',
+  	publicacion: {
+            model: 'edicion'
+        }
   }
 };
 

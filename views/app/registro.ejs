@@ -1,0 +1,138 @@
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/styles/stylesworkspace.css" rel="stylesheet">
+
+<nav class="navbar navbar-static">
+   <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>Comparpersonal</b></a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">  
+          <li><a href="#">Crear Proyecto personal</a></li>
+          <li><a href="#">Suscripcion</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">¿Como medir mi productividad?</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sub-link</a></li>
+              <li><a href="#">Sub-link</a></li>
+              <li><a href="#">Sub-link</a></li>
+              <li><a href="#">Sub-link</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-right navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+            <ul class="dropdown-menu" style="padding:12px;">
+                <form class="form-inline">
+            <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+                </form>
+             </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">About</a></li>
+             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav><!-- /.navbar -->
+
+<header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-6">
+        <h1><a href="#" title="scroll down for your viewing pleasure">Hola,</a>
+          <p class="lead">Luis Gerardo Palacios Alvarado</p></h1>
+      </div>
+      <div class="col col-sm-6">
+        <div class="well pull-right">
+          <img src="//placehold.it/280x100/E7E7E7">        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+	<div class="row">
+      <div class="col col-sm-12">
+        
+        <div class="panel">
+        <div class="panel-body">
+          SNTSA tiene unas tareas para ti <span class="glyphicon glyphicon-heart-empty"></span>
+        </div>
+        </div>
+        
+      </div>
+  	</div>
+  </div>
+</header>
+
+<!-- Begin Body -->
+<div class="container">
+	<div class="row">
+      		<div class="col col-sm-12">
+              <div class="panel">
+              <div class="panel-body">
+
+              <center>
+
+              <h1>REGISTRATE!</h1> 
+              <br>
+
+                <div ng-controller="CuentaController">
+                  
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" ng-click="addItem()">
+                REGISTRARSE
+                </button>
+                 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm">
+                  <div class="modal-dialog">
+                    <div class="modal-content">      
+                      <div class="modal-body">
+                       
+                          <div class="form-group">  <input type="text" ng-model="cuenta.nombre"  class="form-control" placeholder="Nombre"/></div>
+                          <div class="form-group"><input type="text" ng-model="cuenta.email"  class="form-control" placeholder="Email"/></div>
+                          <div class="form-group"></div>          
+                      
+                      </div>
+                      <div class="modal-footer">       
+                         <button class="btn btn-primary" ng-click="saveItem()">Save</button>
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                </center>
+                <hr>
+              
+              </div>
+                  
+              
+            </div>
+      	  </div> 
+  	    </div>
+
+      <hr>
+      <h4><a href="http://bootply.com/">Bootply</a></h4>
+      <hr>
+      </div>
+
+
+
+	<!-- script references -->
+		<script src="js/scripts/scriptsworkspace.js"></script>

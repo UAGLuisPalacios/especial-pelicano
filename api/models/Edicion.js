@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+  	titulo: 'STRING',
+  	magazine: {
+            model: 'revista'
+        },
+        links: {
+            collection: 'link',
+            via: 'publicacion'
+        },
+        actividades: {
+            collection: 'actividad',
+            via: 'publicacion'
+        },
+        subproyectos: {
+            collection: 'subproyecto',
+            via: 'publicacion'
+        }
   }
 };
 

@@ -11,9 +11,24 @@ module.exports = {
         title: "Cuenta"
     });
   },
-  revista: function (req, res) {
+  registro: function (req, res) {
     res.view(null, {
-        title: "Revista"
+        title: "Registro"
+    });
+  },
+  lobby: function (req, res) {
+    res.view(null, {
+        title: "Lobby"
+    });
+  },
+  editorial: function (req, res) {
+    res.view(null, {
+        title: "Editorial"
+    });
+  },
+  publicacion: function (req, res) {
+    res.view(null, {
+        title: "Publicacion"
     });
   }
 };
