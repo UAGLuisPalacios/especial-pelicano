@@ -1,5 +1,5 @@
 define(function () {
-    return ['$scope', '$http', function($scope, $http) {
+    return ['$scope', '$http', '$window', function($scope, $http, $window) {
       
  
 function resetItem(){
@@ -26,6 +26,7 @@ $scope.saveItem = function () {
               $scope.items.push(data);
               $scope.displayForm = '';
               removeModal();
+              $window.location.href = '/app/publicacion?' +data.id;
             }).
   error(function(data, status, headers, config) {
     alert(data.summary);
