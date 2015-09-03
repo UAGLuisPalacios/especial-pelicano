@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/styles/stylesworkspace.css" rel="stylesheet">
+
+<nav class="navbar navbar-static">
+   <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>Comparpersonal</b></a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">  
+          <li><a href="#">Colaborar con SNTSA Seccion 48</a></li>
+          
+        </ul>
+        <ul class="nav navbar-right navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mi propio espacio</i></a>
+            <ul class="dropdown-menu" style="padding:12px;">
+                <form class="form-inline">
+            <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+                </form>
+             </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Luis Gerardo Palacios ALvarado <i class="glyphicon glyphicon-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">About</a></li>
+             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav><!-- /.navbar -->
+
+<div ng-controller="CuentaController">
+	<div id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>SNTSA SECCION 48</h1>
+					<h2 class="subtitle">HAE. DR. JUAN GRAHAM CASASUS</h2>
+					<form class="form-inline signup" role="form">
+
+
+
+
+
+
+					  
+                  
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" ng-click="addItem()">
+                REGISTRARSE
+                </button>
+                 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm">
+                  <div class="modal-dialog">
+                    <div class="modal-content">      
+                      <div class="modal-body">
+                       
+                          <div class="form-group">  <input type="text" ng-model="cuenta.nombre"  class="form-control" placeholder="Nombre"/></div>
+                          <div class="form-group"><input type="text" ng-model="cuenta.email"  class="form-control" placeholder="Email"/></div>
+                          <div class="form-group"></div>          
+                      
+                      </div>
+                      <div class="modal-footer">       
+                         <button class="btn btn-primary" ng-click="saveItem()">Save</button>
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                </center>
+                <hr>
+              
+              </div>
+                  
+              
+            </div>
+      	  </div> 
+
+
+
+
+
+
+					</form>					
+				</div>
+  	    </div>
+
+
+
+				
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+					<p class="copyright">Copyright &copy; 2014 - Bootstraptaste.com</p>
+			</div>
+		</div>		
+	</div>	
+	</div>
