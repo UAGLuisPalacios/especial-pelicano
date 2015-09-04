@@ -10,7 +10,8 @@
     "angular": "~1.4.5",
     "bootstrap": "~3.3.5",
     "jquery": "~2.1.4",
-    "requirejs": "~2.1.20"
+    "requirejs": "~2.1.20",
+    "angular-route": "~1.4.5"
   },
   "name": "espada",
   "version": "0.0.0",

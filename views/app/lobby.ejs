@@ -2,7 +2,6 @@
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="/styles/stylesworkspace.css" rel="stylesheet">
 
 <nav class="navbar navbar-static">
    <div class="container">
@@ -43,30 +42,14 @@
 <header class="masthead">
   <div class="container">
     <div class="row">
-      <div class="col col-sm-6">
+
+      <div ng-controller="PerfilController" class="col col-sm-12">
+      <center>
         <h1><a href="#" title="scroll down for your viewing pleasure">Hola,</a>
-          <p class="lead">Luis Gerardo Palacios Alvarado</p></h1>
-      </div>
-      <div class="col col-sm-6">
-        <div class="well pull-right">
-          <img src="//placehold.it/280x100/E7E7E7">        
-        </div>
+          <p class="lead">{{perfil.nombre}}</p></h1>
+          </center>
       </div>
     </div>
-  </div>
-  
-  <div class="container">
-	<div class="row">
-      <div class="col col-sm-12">
-        
-        <div class="panel">
-        <div class="panel-body">
-          SNTSA tiene unas tareas para ti <span class="glyphicon glyphicon-heart-empty"></span>
-        </div>
-        </div>
-        
-      </div>
-  	</div>
   </div>
 </header>
 
@@ -76,47 +59,65 @@
   			<div class="col col-sm-3">
               	<div id="sidebar">
       			<ul class="nav nav-stacked">
-                    <li><h3 class="highlight">Canales <i class="glyphicon glyphicon-dashboard pull-right"></i></h3></li>
-                  	<li><a href="#">Cuenta</a></li>
-          			<li><a href="#">Proyecto personal</a></li>
+                    <li><h3 class="highlight">Suscripciones </h3></li>
+                  	<li><a href="#">SNTSA Seccion 48</a></li>
 				</ul>
                </div>
       		</div>  
       		<div class="col col-sm-9">
               <div class="panel">
-              <h1>Suscripciones</h1>
-              <br>
+              <h1>Publicaciones Mensuales</h1>
+              <hr>
+
               <div class="row">
-              	<div class="col col-sm-4">
-                  <img src="//placehold.it/400x180/FF3333/FFF" class="img-responsive">
-                  <h4>Crear un proyecto personal</h4>
-                  <hr>
+              	<div class="col col-sm-3">
+                <center>
+                  <img src="http://sntsa30.org.mx/images/logo.png" width="50%">
+                  </center>
                 </div>
                 
-                  <div class="col col-sm-4">
-                  <img src="//placehold.it/400x180/FF3333/FFF" class="img-responsive">
-                  <h4>SNTSA OFICINA "HAE. DR. JUAN GRAHAM CASASUS"</h4>
-                  <hr>
-                </div> 
-                   
+                <div class="col col-sm-9">
+                  <h2>SNTSA Seccion 48 </h2>
+                    <br>
+                    <p>Es un proyecto libre sobre las actividades del sindicato nacional de trabajadores
+                    de salud seccion 48 de los trabajadores del HAE. Dr. Juan Graham Casasus</p>
+                </div>
               </div>
-                  
-                <hr>
-                  
-              	<h2>SUSCRIPCIONES</h2>
-                1. Rebeca Ytzel Palacios Alvarado<br>
-                2. Luis Gerardo Palacios Alvarado<br>
+
+              <div class="row">
+                <div class="col col-sm-3"><center>
+                <a href="/app/publicacion">
+            <button class="btn btn-primary btn-lg" data-toggle="modal">
+                PARTICIPAR
+                </button></a>
+                </button>
+                </center>
+                </div>
+
+                <div class="col col-sm-9">
+                    <p>OPINIONES: 
+                    <img src="/images/gold_star.gif" width="10%" />
+                    <img src="/images/gold_star.gif" width="10%" /> 
+                    <img src="/images/gold_star.gif" width="10%" /> 
+                    <img src="/images/gold_star.gif" width="10%" /> 
+                    <img src="/images/gold_star.gif" width="10%" /> 
+                    </p>
+                </div>
+
+              </div>
+
+              <hr>
+
               
-              	<hr>
-              	
-                  <h4><a href="http://bootply.com/">Bootply</a></h4>
-              	<hr>
+
+
              	</div>
-      	</div> 
+      	</div>            
   	</div>
+
+
+    <br><br>
+                  <h4><a href="http://bootply.com/">Bootply</a></h4>
+                <hr>
 </div>
 
-
-
-	<!-- script references -->
-		<script src="js/scripts/scriptsworkspace.js"></script>

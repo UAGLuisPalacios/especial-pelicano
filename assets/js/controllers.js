@@ -1,7 +1,6 @@
 define(function (require) {
    
-  var angular = require('angular'),
-      Controllers = angular.module('controllers', []);
+  var angular = require('angular'), Controllers = angular.module('controllers', []);
    
   Controllers.controller('CuentaController', require('controllers/CuentaController'));
 
@@ -11,6 +10,7 @@ define(function (require) {
   
   Controllers.controller('RevistaController', require('controllers/RevistaController'));
 
+  Controllers.controller('PerfilController', require('controllers/PerfilController'));
 
   return Controllers;
    

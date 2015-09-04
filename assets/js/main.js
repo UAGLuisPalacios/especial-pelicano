@@ -2,6 +2,7 @@ require.config({
 urlArgs: "bust=" + (new Date()).getTime(),
 paths: {
 'angular': '../vendor/angular/angular',
+'angular-route': '../vendor/angular-route/angular-route',
 'jquery': '../vendor/jquery/dist/jquery',
 'bootstrapJs': '../vendor/bootstrap/dist/js/bootstrap'
 },
@@ -11,13 +12,15 @@ paths: {
 */
 shim: {
 'bootstrapJs': ['jquery'],
-'angular': {'exports': 'angular'}
+'angular': {'exports': 'angular'},
+'angular-route' : ['angular']
 }
 });
 window.name = "NG_DEFER_BOOTSTRAP!";
 require([
 'angular',
 'app',
+'angular-route',
 'bootstrapJs'
 ], function(angular, app) {
 'use strict';

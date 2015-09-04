@@ -1,6 +1,12 @@
 define(function () {
     return ['$scope', '$http', '$window', function($scope, $http, $window) {
       
+      $scope.perfil = {
+      nombre : '',
+      email : '',
+      id : '',
+
+   };
  
 function resetItem(){
    $scope.cuenta = {
@@ -26,7 +32,7 @@ $scope.saveItem = function () {
               $scope.items.push(data);
               $scope.displayForm = '';
               removeModal();
-              $window.location.href = '/app/publicacion?' +data.id;
+              $window.location.href = '/app/lobby#?profileid=' +data.datos;
             }).
   error(function(data, status, headers, config) {
     alert(data.summary);
