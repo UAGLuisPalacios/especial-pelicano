@@ -98,11 +98,11 @@
               <div class="panel" id="midCol">
                 <div class="panel-heading" style="background-color:#555;color:#eee;">AVISOS</div> 
                 <div class="panel-body">
-                  <div class="well">
+                  <div class="well" ng-controller="IniciarController">
                           <img src="http://meetsharn.com/wp-content/uploads/2012/06/Logo-Scoop-It-HD.png" class="img-responsive">
 
 
-                          <h3><a href="http://getbootstrap.com">LINK.TITULO</a></h3>
+                          <h3><a href="http://getbootstrap.com">{{links.titulo}}</a></h3>
 
                           <p style="text-align: justify;
     text-justify: inter-word;">
@@ -112,15 +112,6 @@
     text-justify: inter-word;">
                           <a href="http://www.bootply.com/bootstrap-3-migration-guide" target="ext">
                           Lee nuestras noticias del sindicato nacional de salud que circulan ahora en internet.</a></p>
-                  </div>
-                  <hr>
-                  <div class="well">
-                          <img src="http://192.95.57.65/wp-content/uploads/2015/08/Dropbox-logo.jpeg" class="img-responsive">
-                          <h3><a href="http://getbootstrap.com">Dropbox.</a></h3>
-                          <p>
-                          Dropbox es una app que te permite compartir remotamento archivos sin necesidad de un usb.
-                          </p>
-                          <p><a href="http://www.bootply.com/bootstrap-3-migration-guide" target="ext">Descarga los archivos de nuestro dropbox.</a></p>
                   </div>
                   <hr>
                </div> 
@@ -161,6 +152,3 @@
   </div>
 </footer>
 
-
-  <!-- script references -->
-    <script src="js/scripts/scriptsworkspace.js"></script>

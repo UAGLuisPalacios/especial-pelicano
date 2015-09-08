@@ -33,7 +33,7 @@ $scope.saveItem = function () {
               $scope.items.push(data);
               $scope.displayForm = '';
               removeModal();
-              $window.location.href = '/app/iniciar#?edicionid='+data.id +'&cuenta='+ profileid;
+              $window.location.href = '/app/iniciar#?edicionid='+data.id;
             }).
   error(function(data, status, headers, config) {
     alert(data.summary);
