@@ -11,7 +11,8 @@ module.exports = {
 		Revista.create(params, function(err,Revista){
 			if (err) return next(err);
 
-			return res.redirect('/audiencia/create?titulo=MiAudiencia&datos='+ Revista.id);
+			//return res.redirect('/audiencia/create?titulo=MiAudiencia&datos='+ Revista.id);
+			return res.redirect('/edicion/create?titulo='+ params.titulo +'&magazine='+ Revista.id);
 		});
 	}
 };

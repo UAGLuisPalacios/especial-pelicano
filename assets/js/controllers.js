@@ -12,6 +12,10 @@ define(function (require) {
 
   Controllers.controller('PerfilController', require('controllers/PerfilController'));
 
+  Controllers.controller('NuevaController', require('controllers/NuevaController'));
+
+  Controllers.controller('IniciarController', require('controllers/IniciarController'));
+
   return Controllers;
    
 });

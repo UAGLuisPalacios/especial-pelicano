@@ -35,6 +35,16 @@ module.exports = {
     res.view(null, {
         title: "Landing"
     });
+  },
+  iniciar: function (req, res) {
+    res.view(null, {
+        title: "Iniciar"
+    });
+  },
+  nueva: function (req, res) {
+    res.view(null, {
+        title: "Nueva"
+    });
   }
 };
 
