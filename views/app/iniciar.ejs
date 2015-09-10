@@ -51,10 +51,10 @@
             </center>
           </div>
         </div>
-      <div class="col-md-7">
+      <div class="col-md-7" ng-controller="IniciarController">
       <center>
         <h1><a href="#" title="Scroll down for your viewing pleasure">
-        REVISTA.TITULO
+        {{magazine.titulo}}
         </a>
         <br> EDICION.DETALLES
         
@@ -72,12 +72,19 @@
           <!-- left side column -->
         <div class="col-md-2">
                 <div class="panel panel-default" id="sidebar">
-                <div class="panel-heading" style="background-color:#888;color:#fff;">MENU PRINCIPAL</div> 
-                <div class="panel-body">
+                <div class="panel-heading" style="background-color:#888;color:#fff;">MENU DE EDITOR</div> 
+                <div class="panel-body" ng-controller="IniciarController"> 
+
             <ul class="nav nav-stacked">
-              <li>Compartir</li>
-              <li>Noticias</li>
-              <li>Calificar</li>
+              <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edicionModal" ng-click="addItem()">
+                EDITAR EDICION
+                </button></li>
+              <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#avisoModal" ng-click="addItem()">
+                NUEVO AVISO
+                </button></li>
+              <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#actividadModal" ng-click="addItem()">
+                NUEVA ACTIVIDAD
+                </button></li>
             </ul>
                   
                   <hr>
@@ -125,8 +132,8 @@
                 <div class="panel-body">
                   
                   <div class="row">
-                  <div class="col-md-12">
-                    <h2>ACTIVIDAD.TITULO
+                  <div class="col-md-12" ng-controller="IniciarController">
+                    <h2>{{actividades.titulo}}</h2>
                     
                     <h4>Fecha: 13 de Septiembre de 2015. </h4>
 
@@ -144,6 +151,63 @@
         </div> 
     </div>
 </div>
+
+
+<!-- Modal -->
+                <div class="modal fade" id="edicionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm">
+                  <div class="modal-dialog">
+                    <div class="modal-content">      
+                      <div class="modal-body">
+                       
+                          <div class="form-group">Nombre de la edicion:  
+                          <input type="text" ng-model="revista.titulo"  class="form-control" placeholder="Nombre"/></div>
+                      
+                      </div>
+                      <div class="modal-footer">       
+                         <button class="btn btn-primary" ng-click="saveItem()">Save</button>
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Modal -->
+                <div class="modal fade" id="avisoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm2">
+                  <div class="modal-dialog">
+                    <div class="modal-content">      
+                      <div class="modal-body">
+                       
+                          <div class="form-group">Nombre del aviso:  
+                          <input type="text" ng-model="revista.titulo"  class="form-control" placeholder="Nombre"/></div>
+                      
+                      </div>
+                      <div class="modal-footer">       
+                         <button class="btn btn-primary" ng-click="saveItem()">Save</button>
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Modal -->
+                <div class="modal fade" id="actividadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm3">
+                  <div class="modal-dialog">
+                    <div class="modal-content">      
+                      <div class="modal-body">
+                       
+                          <div class="form-group">Nombre de la actividad:  
+                          <input type="text" ng-model="revista.titulo"  class="form-control" placeholder="Nombre"/></div>
+                      
+                      </div>
+                      <div class="modal-footer">       
+                         <button class="btn btn-primary" ng-click="saveItem()">Save</button>
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
 <footer>
   <div class="container">
     <div class="row">
@@ -151,4 +215,3 @@
     </div>
   </div>
 </footer>
-

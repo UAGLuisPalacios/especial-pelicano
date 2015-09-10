@@ -26,11 +26,6 @@ module.exports = {
         title: "Editorial"
     });
   },
-  publicacion: function (req, res) {
-    res.view(null, {
-        title: "Publicacion"
-    });
-  },
   landing: function (req, res) {
     res.view(null, {
         title: "Landing"
