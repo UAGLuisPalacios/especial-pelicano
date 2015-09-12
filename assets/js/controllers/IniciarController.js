@@ -13,17 +13,17 @@ define(function () {
 
       $scope.links = {
         titulo : '',
-        id : '',
+        id : ''
       };
 
       $scope.actividades = {
         titulo : '',
-        id : '',
+        id : ''
       };
 
       $scope.magazine = {
         titulo : '',
-        id : '',
+        id : ''
       };
 
       /////////////////////////////////////1 LINKS
@@ -37,21 +37,32 @@ define(function () {
         $scope.displayForm = '';
       }
 
-      resetItem();
+      function resetActividades(){
+        $scope.actividades = {
+          titulo : '',
+          id : ''
+        };              
+        $scope.displayForm = '';
+      }
+
+      resetLink();
+
+      resetActividades();
        
-      $scope.addItem = function () {
-        resetItem();
+      $scope.addLink = function () {
+        resetLink();
         $scope.displayForm = true;
       }
        
-      $scope.saveItem = function () {
+      $scope.saveLink = function () {
+        var it = $scope.items;
         var links = $scope.links;
         if (links.id.length == 0){
           $http.get('/link/create?titulo=' + links.titulo + '&publicacion=' + edicionid ).success(function(data) {
-            $scope.items.push(data);
+            $scope.items.links.push(data);
             $scope.displayForm = '';
             removeModal();
-            $window.location.href = '/app/iniciar#?edicionid='+edicionid +'&cuenta='+ profileid;
+            $window.location.href = '/app/iniciar#?edicionid='+edicionid;
           }).
           error(function(data, status, headers, config) {
             alert(data.summary);
@@ -68,12 +79,12 @@ define(function () {
         }
       };
 
-      $scope.editItem = function (data) {       
+      $scope.editLink = function (data) {       
         $scope.links = data;
         $scope.displayForm = true;
       }
        
-      $scope.removeItem = function (data) {
+      $scope.removeLink = function (data) {
         if (confirm('Do you really want to delete?')){
           $http['delete']('/links/' + data.id).success(function() {
             $scope.items.splice($scope.items.indexOf(data), 1);
@@ -103,18 +114,10 @@ define(function () {
 
       /////////////////////////////////////2 REUNIONES
  
-      function resetActividades(){
-        $scope.actividades = {
-          titulo : '',
-          id : ''
-        };              
-        $scope.displayForm = '';
-      }
-
-      resetItem();
+      
        
       $scope.addActividades = function () {
-        resetItem();
+        resetLink();
         $scope.displayForm = true;
       }
        
